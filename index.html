@@ -267,29 +267,45 @@ $members = getChurchMembers('active');
 
 ?&gt;</code></pre></div></div></div>
 
-    <!-- SCHOOL MANAGEMENT SYSTEM -->
-    <div class="project-card">
-      <div class="project-body">
-        <div class="project-tag">Education · Web App</div>
-        <div class="project-title">School Management System</div>
-        <div class="project-desc">
-          PHP/MySQL web app for student records management and school updates to the community.
-        </div>
-        <div class="project-stack"><span class="stack-tag">PHP</span><span class="stack-tag">MySQL</span><span class="stack-tag">HTML/CSS</span></div>
-        <div class="project-actions">
-          <a href="https://justus-ndwigah.github.io/kavingoni-sec-website/"target="_blank"rel="noopener noreferrer"class="btn btn-primary btn-sm">🌐 View Website</a></div>
-      <button class="code-toggle"onclick="toggleCode('code-school',this)"><span>View Code Snippet</span><span>▼</span></button>
-      <div class="code-block" id="code-school"><pre><code class="language-php">&lt;?php
-function getStudentMarks($student_id, $term) {
-    $sql = "SELECT s.subject_name, m.marks, m.grade
-            FROM marks m
-            JOIN subjects s ON m.subject_id = s.id
-            WHERE m.student_id = ? AND m.term = ?";
-    $stmt = $this->db->prepare($sql);
-    $stmt->execute([$student_id, $term]);
-    return $stmt->fetchAll(PDO::FETCH_ASSOC);
-}
-?&gt;</code></pre></div></div></div>
+ 
+<!-- SCHOOL WEBSITE -->
+<div class="project-card">
+  <div class="project-body">
+    <div class="project-tag">Education Website</div>
+    <div class="project-title">Senior School Website</div>
+    <div class="project-desc">
+      A school website showcasing academic programmes, school activities, achievements, news and updates to the community.
+    </div>
+    <div class="project-stack">
+      <span class="stack-tag">HTML</span>
+      <span class="stack-tag">CSS</span>
+      <span class="stack-tag">JavaScript</span>
+    </div>
+    <div class="project-actions">
+      <a href="https://justus-ndwigah.github.io/kavingoni-sec-website/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">🌐 View Website</a>
+    </div>
+    <button class="code-toggle" onclick="toggleCode('code-school',this)">
+      <span>View Code Snippet</span><span>▼</span>
+    </button>
+    <div class="code-block" id="code-school">
+      <pre><code class="language-javascript">// Display school website information
+const school = {
+  name: "St. Thomas Kavingoni Senior School",
+  sections: [
+    "About Us",
+    "Academics",
+    "School Life",
+    "News & Events",
+    "Gallery",
+    "Contact"
+  ]
+};
+
+console.log(school);</code></pre>
+    </div>
+  </div>
+</div>
+
 
     <!-- GIT & GITHUB -->
     <div class="project-card">
@@ -411,101 +427,48 @@ function getEligiblePathways(
     </div>
 
 
-    <!-- SCHOOL WEBSITES -->
-    <div class="project-card">
-      <div class="project-body">
 
-        <div class="project-tag">
-          Education · Web Development
-        </div>
 
-        <div class="project-title">
-          School Websites &amp; Edu-Tech
-        </div>
-
-        <div class="project-desc">
-          Responsive websites for St Thomas Kavingoni Senior School using HTML5/CSS and PHP.
-        </div>
-
-        <div class="project-stack">
-          <span class="stack-tag">PHP</span>
-          <span class="stack-tag">HTML5/CSS</span>
-          <span class="stack-tag">Education-Tech</span>
-        </div>
-
-        <div class="project-actions">
-          <a href="https://justus-ndwigah.github.io/website-kavingoni-ict/"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="btn btn-primary btn-sm">
-            🌐 View Website
-          </a>
-        </div>
-
-        <button class="code-toggle"
-                onclick="toggleCode('code4',this)">
-          <span>View Website Snippet</span>
-          <span>▼</span>
-        </button>
-
-        <div class="code-block" id="code4">
-          <pre><code class="language-html">&lt;!-- Responsive school website navigation --&gt;
-
-&lt;nav class="navbar"&gt;
-
-  &lt;a href="index.html" class="logo"&gt;
-    St. Thomas Kavingoni
-  &lt;/a&gt;
-
-  &lt;ul class="nav-links"&gt;
-
-    &lt;li&gt;
-      &lt;a href="index.html"&gt;Home&lt;/a&gt;
-    &lt;/li&gt;
-
-    &lt;li&gt;
-      &lt;a href="about.html"&gt;About&lt;/a&gt;
-    &lt;/li&gt;
-
-    &lt;li&gt;
-      &lt;a href="academics.html"&gt;Academics&lt;/a&gt;
-    &lt;/li&gt;
-
-    &lt;li&gt;
-      &lt;a href="gallery.html"&gt;Gallery&lt;/a&gt;
-    &lt;/li&gt;
-
-    &lt;li&gt;
-      &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
-    &lt;/li&gt;
-
-  &lt;/ul&gt;
-
-&lt;/nav&gt;</code></pre>
-        </div>
-
-      </div>
+<!-- HAVENPOINT PROPERTIES -->
+<div class="project-card">
+  <div class="project-body">
+    <div class="project-tag">Real Estate · Web Development</div>
+    <div class="project-title">HavenPoint Properties Website</div>
+    <div class="project-desc"> A professional real estate website showcasing homes, property listings and services to help clients discover quality homes across Kenya.</div>
+   <div class="project-stack">
+      <span class="stack-tag">Odoo Website Builder</span>
+      <span class="stack-tag">Web Design</span>
+      <span class="stack-tag">Responsive Design</span>
     </div>
-
+    <div class="project-actions"><a href="https://havenpoint-properties.odoo.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">🌐 View Website</a></div>
+    <button class="code-toggle" onclick="toggleCode('code4',this)"><span>View Website Features</span> <span>▼</span> </button>
+    <div class="code-block" id="code4">
+      <pre><code class="language-html">&lt;!-- HavenPoint Properties --&gt;
+&lt;!-- Built using Odoo Website Builder --&gt;
+Features:
+- Property listings and home discovery
+- Real estate services presentation
+- Responsive website design
+- Professional business branding</code></pre>
+    </div>
+  </div>
+</div>
+</code>
 
     <!-- SMART WEB APPLICATION FORM -->
     <div class="project-card">
       <div class="project-body">
-
         <div class="project-tag">
           Job Application System
         </div>
-
         <div class="project-title">
           Smart Web Application Form
         </div>
-
         <div class="project-desc">
           A professional web-based recruitment application system designed to
           collect, validate, review, and securely submit job applications.
           The system sends confirmation emails to both the applicant and the hiring institution.
         </div>
-
         <div class="project-stack">
           <span class="stack-tag">HTML</span>
           <span class="stack-tag">CSS</span>
@@ -515,21 +478,12 @@ function getEligiblePathways(
           <span class="stack-tag">Google Drive</span>
         </div>
 
-        <div class="project-actions">
-          <a href="https://justus-ndwigah.github.io/online-application-form/"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="btn btn-primary btn-sm">
-            🌐 View Application Form
-          </a>
-        </div>
-
+        <div class="project-actions"> <a href="https://justus-ndwigah.github.io/online-application-form/"target="_blank" rel="noopener noreferrer"class="btn btn-primary btn-sm"> 🌐 View Application Form </a> </div>
         <button class="code-toggle"
                 onclick="toggleCode('code-application',this)">
           <span>View Code Snippet</span>
           <span>▼</span>
         </button>
-
         <div class="code-block" id="code-application">
           <pre><code class="language-javascript">// Automatic application draft saving
 
