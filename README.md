@@ -1,1 +1,1 @@
-# justus-njeru-portifolio
+# justus-njeru-portfolio
